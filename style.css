@@ -3,9 +3,8 @@ html {
     overflow:hidden;
     scroll-behavior: smooth;
     display: flex;
-
-  }
-  body {
+}
+body {
       color: #fff;
       margin: 0;
       padding: 0;
@@ -25,11 +24,12 @@ html {
   .intro, .intro2, .intro3 {
       box-sizing: border-box;
       min-height: 100vh;
-      padding: 30vw 0 5vw;
+      padding: 25vw 0 5vw;
       position: relative;
       transform-style: inherit;
       width: 100vw;
   }
+  /* adicionar aquela fonte com shadow que usei no protótipo de estrelas */
   
   .intro .intro2 .intro3 h1 {
       margin-top: -100px;
@@ -115,12 +115,6 @@ html {
     color: #ffffff;
   }
 
-  .linha {
-    width: 100px;
-    border-top: 5px
-    margin: 20px 0;
-}
-
 .label {
     margin-top: 30px;
     display: inline-block;
@@ -152,27 +146,36 @@ html {
 
 ul {
     color: transparent;
+    display: flex;
+    justify-content: space-around;
 }
 
 li {
-    display: inline-block;
-    margin: 30px 20px;
+    margin: 1%;
     font-weight: bold;
 }
 
-a:hover {
-    color: #fef061;
-    
+a {
+    color: white;
+    width: 1%;
+    height: 20%;
 }
 
 .botaoo {
-    display: block;
-    width: 220px;
-    padding: 15px 10px;
-    border-radius: 8px;
-    margin: 10px 0 30px 0;
-    text-align: center;
+    color: white;
+    border-radius: 28px;
     font-weight: bold;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    width: 20%;
+    height: 5%;
+    background-color: black;
+    top: 100%;
+    left: 41%;
+    padding-top: 27px;
 }
+
+.botaoo:hover {
+    filter: invert();
+}
+

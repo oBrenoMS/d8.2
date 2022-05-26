@@ -1,0 +1,178 @@
+html {
+    height:100%;
+    overflow:hidden;
+    scroll-behavior: smooth;
+    display: flex;
+
+  }
+  body {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      perspective: 1px;
+      transform-style: preserve-3d;
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background:rgb(0, 0, 0);
+      text-align: center;
+      font-style: unset;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      
+  }
+  .intro, .intro2, .intro3 {
+      box-sizing: border-box;
+      min-height: 100vh;
+      padding: 30vw 0 5vw;
+      position: relative;
+      transform-style: inherit;
+      width: 100vw;
+  }
+  
+  .intro .intro2 .intro3 h1 {
+      margin-top: -100px;
+  }
+  .intro, .intro:before, .intro2, .intro2:before, .intro3, .intro3:before {
+      background: 50% 50% / cover;
+  }
+  
+  .intro:before {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      display: block;
+      background-image: url(images/seila.jpg);
+      background-size: cover;
+      transform-origin: center center 0;
+      transform:  translateZ(-1px) scale(2);
+      z-index: -1;
+      height: 100vh
+  }
+
+  .intro2:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(images/dev.webp);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform:  translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh
+}
+
+.intro3:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(images/matrix.webp);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform:  translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh
+}
+  
+  .content {
+    margin:200px auto;
+   width:100%;
+    position: relative;
+    z-index: 1;
+    background:rgb(0, 0, 0);
+    padding:100px 0
+  }
+  .container {
+    max-width:800px;
+    margin:0 auto
+  }
+
+  h1 {
+      font-size: 50px;
+      font-weight: bolder;
+  }
+
+  p {
+      font-size: 25px;
+      font-weight: bold;
+  }
+
+  .boladao {
+    font-size: 36pt;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .linha {
+    width: 100px;
+    border-top: 5px
+    margin: 20px 0;
+}
+
+.label {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.progress-label {
+    /* display: inline-block; */
+    text-align: right;
+    right: 0;
+}
+
+.progress {
+    border: 0;
+    width: 100%;
+    height: 15px;
+}
+
+.text {
+    font-weight: lighter;
+}
+
+.menu {
+    background-color: transparent;
+    height: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    color: transparent;
+}
+
+li {
+    display: inline-block;
+    margin: 30px 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fef061;
+    
+}
+
+.botaoo {
+    display: block;
+    width: 220px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}

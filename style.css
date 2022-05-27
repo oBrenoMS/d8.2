@@ -3,6 +3,9 @@ html {
     overflow:hidden;
     scroll-behavior: smooth;
     display: flex;
+    font-family: 'Secular One', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'VT323', monospace;
 }
 body {
       color: #fff;
@@ -15,8 +18,8 @@ body {
       overflow-x: hidden;
       background:rgb(0, 0, 0);
       text-align: center;
-      font-style: unset;
-      font-family: sans-serif;
+/*       font-style: unset;
+      font-family: sans-serif; */
       display: flex;
       flex-direction: column;
       
@@ -24,7 +27,7 @@ body {
   .intro, .intro2, .intro3 {
       box-sizing: border-box;
       min-height: 100vh;
-      padding: 25vw 0 5vw;
+      padding: 20vw 0 5vw;
       position: relative;
       transform-style: inherit;
       width: 100vw;
@@ -46,7 +49,7 @@ body {
       right: 0;
       top: 0;
       display: block;
-      background-image: url(images/seila.jpg);
+      background-image: url(images/OTA.gif);
       background-size: cover;
       transform-origin: center center 0;
       transform:  translateZ(-1px) scale(2);
@@ -62,7 +65,7 @@ body {
     right: 0;
     top: 0;
     display: block;
-    background-image: url(images/dev.webp);
+    background-image: url(images/fundo.gif);
     background-size: cover;
     transform-origin: center center 0;
     transform:  translateZ(-1px) scale(2);
@@ -78,7 +81,7 @@ body {
     right: 0;
     top: 0;
     display: block;
-    background-image: url(images/matrix.webp);
+    background-image: url(images/matrix.webp);;
     background-size: cover;
     transform-origin: center center 0;
     transform:  translateZ(-1px) scale(2);
@@ -102,29 +105,41 @@ body {
 
   h1 {
       font-size: 50px;
-      font-weight: bolder;
+      
+      color: white;
+      text-shadow: 2px gray;
+/*       background-color:white; */
+/*     width: 30%;
+    height: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+      /* font-weight: bolder; */ */
   }
-
+h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
   p {
-      font-size: 18px;
-      font-weight: bold;
-  }
-
-  .boladao {
-    font-size: 36pt;
-    font-weight: 600;
-    color: #ffffff;
+      font-size: 25px;
+      color: white;
+      /* font-weight: bold; */
   }
 
 .label {
     margin-top: 30px;
     display: inline-block;
+    font-size: 20px;
 }
 
 .progress-label {
     /* display: inline-block; */
     text-align: right;
     right: 0;
+    font-size: 25px;
 }
 
 .progress {
@@ -170,12 +185,15 @@ a {
     color: white;
     width: 1%;
     height: 20%;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .botaoo {
     color: white;
     border-radius: 28px;
     font-weight: bold;
+    font-size: 35px;
     position: absolute;
     z-index: 1;
     width: 20%;
@@ -183,7 +201,9 @@ a {
     background-color: black;
     top: 100%;
     left: 41%;
-    padding-top: 27px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: 6px #e415f9 inset;
 }
 
 .botaoo:hover, .botao:hover {
@@ -194,12 +214,14 @@ a {
     color: #ffffff;
     border-radius: 28px;
     font-weight: bold;
+    font-size: 25px;
     position: absolute;
     z-index: 1;
     width: 20%;
     height: 3%;
     background-color: #000000;
     padding-top: 13px;
+    padding-bottom: 15px;
     left: 39%;
     top: 86%;
     border: 6px #e415f9 outset;
@@ -211,7 +233,7 @@ a {
 
 .container2 {
     margin: 200px auto;
-    width: 100%;
+    width: 90%;
     position: relative;
     z-index: 1;
     background: rgb(0, 0, 0);
@@ -228,3 +250,44 @@ a {
     padding: 200px 0;
     /* padding: 20px 0 180px; */
   }
+
+  .quantasvezes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 25px;
+      padding-top: 7%;
+  }
+
+.portfolio {
+    justify-content: center;
+
+}
+
+.light-div {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 5%;
+    display: block;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.item-portfolio {
+    height: auto;
+    width: 42%;
+    align-items: center;
+    mix-blend-mode: normal;
+    max-width: 786px;
+    border: 1px #ffffff solid;
+    object-fit: cover;
+}

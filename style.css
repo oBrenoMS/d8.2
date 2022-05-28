@@ -92,7 +92,7 @@ body {
   .container {
     margin: 130px auto;
     width: 90%;
-    position: relative;
+/*     position: relative; */
     z-index: 1;
     background: rgb(0, 0, 0);
     padding: 0px 0 85px;
